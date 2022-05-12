@@ -1,0 +1,2328 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>bewine </title>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+
+
+
+	<style>
+
+
+	*{margin: 0; padding: 0;}
+
+	* ul,ol,li{list-style:none;}
+
+	*{box-sizing: border-box; margin: 0px; }
+
+
+
+
+
+
+
+
+@media(max-width:599px){
+
+
+
+
+
+/*-------------------------------------------헤더 맨위에---------------------------------------------*/
+
+header{width: 100%; height: 120px; background-color:#024126; margin: 0 auto;}
+
+#logo{width: 100%; height: 120px; background-color:#024126; padding:30px 0 auto; margin: 0 auto;display: flex; justify-content: center; align-items: center;}
+
+#logobox{width: 80%; height: 70px; background-color:#024126; display: flex; justify-content: center; align-items: center; margin: 0 0 0 20px; }
+
+#logobox>a>img{width: 100%; height: 100%;margin: 20px 2px ;}
+
+
+
+
+
+/*-------------------------------------------메뉴들---------------------------------------------*/
+
+
+/*---------------------------------------햄버거 메뉴하려고 했던것들---------------------------
+
+.icon{width:90%; height: 100%; background-color: #024126; display: flex; justify-content: center; align-items: center; }
+
+.icon img{width:30px; height:30px; margin: 30px 0 0 0px; }
+
+.icon img:hover{opacity: 0.7;}
+
+-------------------------------------------------------------------------------------------*/
+
+.xxx {width:20px; height:20px;  margin:50px 0 30px 270px;  cursor:pointer; }
+
+.active{border-top:1px solid #125438;  }
+
+.a {display: none;}
+
+#menu1 {width:300px; height:100vh; background-color:#012113;  right:-300px; opacity:0.9;position: fixed; right:-300px; opacity:0.9; margin: -120px 0 0 0px; }
+
+ .navBtn {  width: 30px; height:30px; line-height: 50px;  background-color:#024126; float: right;}
+
+
+    #menu1 h1 {text-align:center; margin:0 0 100px 0px;}
+
+    #menu1 li {text-align:center; line-height:35px; cursor:pointer;  border-bottom:1px solid #125438; font-family: 'Josefin Sans', sans-serif; font-weight: 600;line-height: 50px; }
+
+    #menu1 li a {color:#ead4c0; text-decoration:none; }
+
+    #menu1 li:hover { color:#F8E9DB;}
+
+    #menu1 li:hover a{color:#fff;}
+
+
+
+
+
+
+/*-------------------------------------슬라이더---엄청큰 와인-------------------------------------------*/
+
+#slider{width: 100%;  height: 550px; background-color:#024126; margin: 0 auto; overflow: hidden; 	background-image:url("img/wineslider.jpg"); background-size:cover; background-position:center; display: flex; flex-wrap: wrap; justify-content: center;}
+
+#firstwine{width: 100%; height: auto; text-align: center;display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;align-items: center; font-size: 19px; }
+
+#firstwine h1{color: #fff;  font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+
+#firstbtn{width: 400px;  height: 73px;  }
+
+
+#firstbtn1{width: 120px;  height: 35px;  border: none; margin: 20px 0 0 2px;  cursor: pointer; background-color: #62011d;}
+
+#firstbtn1>a{color: white; text-decoration: none;}
+
+#firstbtn1:hover{background-color: #4c0116;}
+
+#firstbtn2{width: 120px;  height: 35px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#firstbtn2>a{color: white; text-decoration: none;}
+
+
+#firstbtn2:hover{background-color: #6e9183;}
+
+
+
+/*--------------------------------박스1번----와인밑에 플레이버튼들-------------------------------------*/
+
+#box1{width: 100%;  height: 125px; background-color:#024126; margin: 0 auto;}
+
+#us{width: 100%;  height: 125px; background-color: #024126; margin: 0 auto;}
+
+
+
+
+#facebook{width: 100%;  height: 41px; background-color:#024126;  float: left;}
+
+#facebook>img{width: 15px; height: 15px; float: left; margin: 15px 0 0 20px;}
+
+#facebook>p>a{font-size: 14px; float: left; font-family: 'Josefin Sans', sans-serif; font-weight: 600;  margin: 18px 0 0 0px; color:#80a093; text-decoration: none;}
+
+
+
+
+
+#enjoy{width:  100%;  height: 41px; background-color:#024126;  float: left; text-align: center;  }
+
+#enjoy>p{ font-size: 15px; font-family: 'Josefin Sans', sans-serif; font-weight: 400; margin: 18px 0 0 0px; color: #ead4c0;}
+
+
+
+
+
+
+#play{width:  100%;  height: 41px; background-color:#024126;  float: right;}
+
+#play>img{width: 15px; height: 15px;float: right; margin: 15px 20px 0 0px;}
+
+#play>p>a{font-size: 14px; float: right; font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 18px 0 0 0px;  color:#80a093; text-decoration: none;}
+
+
+
+
+/*-----------------------------박스2번-----어바웃어스 엄청큰1897----------------------------------------*/
+
+
+#box2{width: 100%;  height: auto;background-color:#024126; margin: 0 auto;}
+
+.container{width: 100%; height: 190px; background-color:#024126; margin: 0 auto;}
+
+.aboutbox{width:100%; height: 180px; background-color:#024126; margin: 0 auto;}
+
+.about{width:100%; height: 35px; background-color:#024126; margin: 50px 0 0 0px; float: left;}
+
+.about>p{font-size: 14px; color:#ead4c0;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+.history{width:100%; height: 80px; background-color:#024126; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+.history>h1{font-size: 35px;}
+
+.history>h1>span{color: #80a093;background-color:#024126;} 
+
+
+
+/*-----------------------------히스토리까지 끝남----------------------------------------*/
+
+
+#after{width: 100%;  height: auto; background-color:#024126; margin: 0 auto; display: flex; flex-direction: column;}
+
+
+#halfbox{width: 100%; height: auto; background-color: #024126;margin: 0px auto;  }
+
+
+#half1{width: 100%;  height: 393px; background-color:#024126; margin: 5px auto; float: left; display: flex; justify-content: center; align-items: center;}
+
+#half1>img{width: 85%;  height: 85%;}
+
+#half2{width: 90%;  height: auto; background-color:#024126; margin: 0px auto;  }
+
+#half2 p{color:#ead4c0; font-family: 'Josefin Sans', sans-serif;  font-weight: 300; font-size: 20px; }
+
+
+
+/*-----------------------------1897그림이랑 영어끝남---------------------------------------*/
+
+#number{width: 100%;  height: auto; background-color:#024126; margin: 50px 0px 0 0px; float: left; display: flex; flex-direction: column;}
+
+.move{width: 265px;  height: 200px; background-color:#024126; margin: 0px auto ; float: left;}
+
+.move>h5{color:#ead4c0; font-family: 'Josefin Sans', sans-serif; text-align: center; font-weight: 600; font-size: 75px;}
+
+.move>h6{color:#ead4c0; font-family: 'Josefin Sans', sans-serif; text-align: center; font-weight: 600; font-size: 13px;}
+
+.move>p{color:#80a093; font-family: 'Josefin Sans', sans-serif; text-align: center ; font-weight: 300; margin: 10px auto; font-size: 18px;}
+
+
+#push{width: 100%;  height: 180px; background-color:#024126; margin: 0px 0 0 0px; display: flex; justify-content: center; align-items: center;}
+
+#pushmid{width: 250px;  height: 73px; background-color:#024126;  }
+
+
+#btn1{width: 120px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #62011d;}
+
+#btn1>a{color: white; text-decoration: none;}
+
+#btn1:hover{background-color: #4c0116;}
+
+#btn2{width: 120px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn2>a{color: white; text-decoration: none;}
+
+
+#btn2:hover{background-color: #6e9183;}
+
+
+
+
+
+
+/*--------------------------박스3번-------하우위워크 포도들 있는곳--------------------------------------*/
+
+#box3 { width: 100%;  height:2350px; background-color:#f2e8df; margin: 0 auto;}
+
+#grid{width: 100%; height: 33px; background-color:#024126;}
+
+#grid img{width: 100%; height: 33px;}
+
+
+
+#container3 { width: 100%;  height: 100px; background-color:#f2e8df; margin: 0 auto;}
+
+#ingredient { width: 100%;  height: 745px; background-color:#f2e8df; margin: 0 auto;}
+
+#smallbox { width: 100%;  height: 95px; background-color:#f2e8df; margin: 0 auto;}
+
+
+
+#how { width: 100%;  height: 45px; background-color:#f2e8df; margin: 0 auto;}
+
+#how>p { text-align: center; font-size: 15px; font-weight: bold; color:#80a093; }
+
+#best { width: 100%;  height: 50px; background-color:#f2e8df; margin: 0 auto; }
+
+#best>h3 { text-align: center; font-size: 30px; font-family: 'Josefin Sans', sans-serif; font-weight: 600; color: #024126; }
+
+#fruitbox{width:100%;  height: 1965px; background-color: #f2e8df; margin: 0 auto;  }
+
+
+
+/*-------------------내가지금 만진곳!!!!!!!!!!!!!! 그레이프임!
+------------------------*/
+
+.grape{width: 100%;  height: 490px; background-color:#f2e8df; margin: 0 auto; display: flex; flex-wrap: wrap; flex-direction: column; }
+
+.grapeimg{width: 70%;  height: 320px; background-color:#f2e8df; margin: 0 auto; float: left;}
+
+.grapeimg>img{width: 90%; height: 100%;}
+
+.winename{width: 80%;  height: 50px; background-color:#f2e8df; margin: 10px auto; float: left;}
+
+.winename>h4{font-size: 20px; color: #024126; text-align: center;}
+
+.story{width: 80%;  height: 90px; background-color:#f2e8df; margin: 0 auto; float: left;text-align: center; }
+
+.story>p{color: #776c62; font-size: 15px;}
+
+
+/* -------------------여기까지 포도 상세내역들----------------- */
+
+
+
+#push2{width: 100%;  height: 60px; background-color:#f2e8df; display: flex; justify-content: center;}
+
+#pushmid2{width: 350px;  height: 73px;   }
+
+
+#btn3{width: 202px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #024126;}
+
+#btn3>a{color: white; text-decoration: none;}
+
+#btn3:hover{background-color: #02311d;}
+
+#btn4{width: 133px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn4>a{color: white; text-decoration: none;}
+
+
+#btn4:hover{background-color: #6e9183;}
+
+
+
+
+/*---------------------박스4번 비와인 사진 3개 큰거있음 밭 와인 고기--------------------------------------*/
+
+
+#box4{width: 100%;  height: 2850px; background-color:#024126; margin: 0px auto;}
+
+
+.container4{width: 100%; height: 150px; background-color:#024126; margin: 0 auto;}
+
+.aboutbox4{width:100%; height: 250px; background-color:#024126; margin: 0 auto;}
+
+.about4{width:100%; height: 35px; background-color:#024126; margin: 50px 0 0 0px; float: left;}
+
+.about4>p{font-size: 14px; color:#ead4c0;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+.history4{width:100%; height: 150px; background-color:#024126; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+.history4>h1{font-size: 50px;}
+
+.history4>h1>span{color: #80a093;}
+
+
+#grid2{width: 100%; height: 170px; background-color:#024126;}
+
+#grid2 img{width: 100%;}
+
+#select{width: 100%; height: 2300px; background-color:#024126; margin: 0px auto; display: flex; justify-content: center; flex-direction: column;}
+
+
+
+.terrace{width: 100%; height: auto; background-color:#024126; display: flex; justify-content: center;  flex-direction: column;}
+
+
+
+.imgbox{width: 90%; height: 407px; background-color:#024126; margin: 0px auto; }
+
+.imgbox>img{width: 100%; height: 100%;}
+
+
+
+.visit{width: 305px; height: 110px; background-color:#024126; margin: 0px auto; }
+
+.visit>h4{text-align: center; font-size: 25px; color: white; margin: 30px 0 0 0PX; font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+
+.euro{width: 305px; height: 40px; background-color:#024126; margin: 0px auto; }
+
+.euro>h5{text-align: center; font-size: 18px; color: #d3ad7f;}
+
+
+.new{width: 305px; height: 61px; background-color:#024126; margin: 0px auto;}
+
+.new>p{text-align: center; font-size: 15px; color: white;}
+
+
+
+.next{width: 305px; height: 70px; background-color:#024126; margin: 15px auto; float: left;}
+
+.next>p{text-align: center; font-size: 15px; color: #80a093;}
+
+.next>p>img{width: 18px; height: 18px; margin: 0px 8 0 0px;  background-color: #024126;}
+
+
+
+/*--------------------------여기서 부턴 버튼----------------*/
+
+
+
+
+#push3{width: 100%;  height: 110px; background-color:#024126; display: flex; justify-content: center; }
+
+#pushmid3{width: 250px;  height: 73px; background-color:#024126;}
+
+
+#btn5{width: 120px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #62011d;}
+
+#btn5>a{color: white; text-decoration: none;}
+
+#btn5:hover{background-color: #4c0116;}
+
+#btn6{width: 120px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn6>a{color: white; text-decoration: none;}
+
+
+#btn6:hover{background-color: #6e9183;}
+
+
+
+/*-------------------------------------------박스5번---------------------------------------------*/
+
+#box5{width: 100%;  height: 2000; background-color:red; margin: 0 auto;}
+
+#grid3{width: 100%; height:50px ; background-color: #024126; margin: 0px  auto;}
+
+#grid3 img{width: 100%; height: 100%;}
+
+
+
+#leafbox{width: 100%;  height: auto; background-color:#f3e8df;  display: flex; justify-content: center; flex-direction: column;}
+
+#veryleafbox{width: 80%; height: auto; background-color: purple;margin: 0px auto;   }
+
+#grape5{width: 100%;  height: auto; background-color:#f3e8df;   display: flex; justify-content: center;}
+
+
+
+#grape6{width: 100%;  height: auto; background-color:#f3e8df;;display: flex; justify-content: center;}
+
+#medium{width: 100%;  height: auto; background-color:#f3e8df;; margin: 0 auto; float: left; }
+
+
+
+
+#about5{width:100%; height: 35px; background-color:#f3e8df; margin: 10px 0 0 0px; float: left;}
+
+#about5>p{font-size: 14px; color:#80a093;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+
+
+
+
+#club5{width:100%; height: 130px; background-color:#F3E8DF; margin: 0px auto; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+#club5>h1{font-size: 35px; color: #024126;}
+
+#club5>h1>span{color: #80a093;}
+
+
+#duis{width:100%; height: 167px; background-color:#F3E8DF; text-align: center; color: #776c62;font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 15spx;}
+
+#pushmid4{width: 100%;  height:auto; background-color:#F3E8DF; margin: 0px auto; display: flex;justify-content: center; }
+
+#btn7{width: 120px;  height: 49px;  border: none; margin: 40px auto;  cursor: pointer; background-color: #62011d;}
+
+#btn7>a{color: white; text-decoration: none;}
+
+#btn7:hover{background-color: #4c0116;}
+
+
+/*-------------------------------------------푸터 맨밑에--------------------------------------------*/
+
+footer{width: 100%;  height: 320px; background-color:#F3E8DF;margin: 0 auto; }
+
+#last{width: 100%;  height: 164px; background-color:#F3E8DF; margin: 0 auto;display: flex; }
+
+
+
+#famila{width: 50%;  height: auto; background-color: #F3E8DF;display: flex; flex-direction: column; }
+
+#estd{width: 100%;  height: 52px; background-color: #F3E8DF; margin: 0 auto; float: left;}
+
+#underpen{width: 100%;  height: 60px; background-color: #F3E8DF; margin: 11px auto; float: left; color: #776c62; font-family: 'Josefin Sans', sans-serif; font-size: 20px; font-weight: 300;}
+
+
+#phone{width: 50%;  height: 120px; background-color:#F3E8DF; margin: 0 auto; display: flex; flex-direction: column; }
+
+#iconum{width: 100%;  height: 52px; background-color:#F3E8DF; margin: 0 auto;float: right;}
+
+#iconum>h4{float: right; font-size: 24px;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 15px auto; color: #776c62;}
+
+#iconbird{width: 100%;  height: 30px; background-color:#F3E8DF; margin:31px auto;  display: flex; justify-content: flex-end;}
+
+#iconbird a img{width: 30px; height: 30px; float: left; margin: 0 0 0 10px;}
+
+#betheme{width: 100%; height: 88px; background-color: #F3E8DF; margin:57px auto; border-top: 1px solid #776c62;}
+
+#beantown{width: 100%; height: 88px; background-color: #F3E8DF; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+
+#beantown>p{font-family: 'Josefin Sans', sans-serif; color: #776c62; float: left;}
+
+#beantown>p>a{text-decoration: none; color: #d3ad7f; }
+
+#beantown>p>a:hover{text-decoration: underline; font-weight: 500 ;}
+
+
+
+}
+
+
+
+
+
+
+@media(min-width:600px){
+
+
+
+/*-------------------------------------------헤더 맨위에---------------------------------------------*/
+
+header{width: 100%; height: 120px; background-color:#024126; margin: 0 auto;}
+
+#logo{width: 100%; height: 120px; background-color:#024126; padding:30px 0 auto; margin: 0 auto;display: flex; justify-content: center; align-items: center;}
+
+#logobox{width: 80%; height: 70px; background-color:#024126; display: flex; justify-content: center; align-items: center; margin: 0 0 0 20px; }
+
+#logobox>a>img{width: 100%; height: 100%;margin: 20px 2px ;}
+
+
+
+
+
+/*-------------------------------------------메뉴들---------------------------------------------*/
+
+
+/*---------------------------------------햄버거 메뉴하려고 했던것들---------------------------
+
+.icon{width:90%; height: 100%; background-color: #024126; display: flex; justify-content: center; align-items: center; }
+
+.icon img{width:30px; height:30px; margin: 30px 0 0 0px; }
+
+.icon img:hover{opacity: 0.7;}
+
+-------------------------------------------------------------------------------------------*/
+
+.xxx {width:20px; height:20px;  margin:50px 0 30px 270px;  cursor:pointer; }
+
+.active{border-top:1px solid #125438;  }
+
+
+#menu1 {width:300px; height:100vh; background-color:#012113;  position: fixed; right:-300px; opacity:0.9; right:-300px; opacity:0.9; margin: -120px 0 0 0px; }
+
+ .navBtn {  width: 30px; height:30px; line-height: 50px;  background-color: #024126; float: right;}
+
+
+    #menu1 h1 {text-align:center; margin:0 0 100px 0px;}
+
+    #menu1 li {text-align:center; line-height:35px; cursor:pointer;  border-bottom:1px solid #125438; font-family: 'Josefin Sans', sans-serif; font-weight: 600;line-height: 50px; }
+
+    #menu1 li a {color:#ead4c0; text-decoration:none; }
+
+    #menu1 li:hover { color:#F8E9DB;}
+
+    #menu1 li:hover a{color:#fff;}
+
+
+
+/*-------------------------------------슬라이더---엄청큰 와인-------------------------------------------*/
+
+#slider{width: 100%;  height: 850px; background-color:orange; margin: 0 auto; background-size:cover;	background-image:url("img/wineslider.jpg");  background-position:center; display: flex; flex-wrap: wrap; justify-content: flex-start;}
+
+
+
+#firstwine{width: 100%; height: auto; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: flex-start;align-items: center; font-size: 27px; }
+
+#firstwine h1{ width: 400px; color: #fff;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 250px 840px 0px 0px; }
+
+
+#firstbtn{width: 400px;  height: 80px;   margin: 40px 900px 0 0px; display: flex; justify-content: center; align-items: center;}
+
+
+#firstbtn1{width: 180px;  height: 55px;  border: none; cursor: pointer; background-color: #62011d; font-size: 18px; margin: 0px 10px;}
+
+#firstbtn1>a{color: white; text-decoration: none;}
+
+#firstbtn1:hover{background-color: #4c0116;}
+
+#firstbtn2{width: 180px;  height: 55px;  color: white; border: none;  cursor: pointer; background-color:#80a093; font-size: 18px;}
+
+#firstbtn2>a{color: white; text-decoration: none;}
+
+
+#firstbtn2:hover{background-color: #6e9183;}
+
+
+
+/*--------------------------------박스1번----와인밑에 플레이버튼들-------------------------------------*/
+
+#box1{width: 100%;  height: 125px; background-color:#024126; margin: 0 auto;}
+
+#us{width: 60%;  height: 125px; background-color:#024126; margin: 0 auto;}
+
+
+
+
+
+#facebook{width: 25%;  height: 125px; background-color:#024126;  float: left;}
+
+#facebook>img{width: 15px; height: 15px; float: left; margin: 15px 0 0 55px;}
+
+#facebook>p>a{font-size: 14px; float: left; font-family: 'Josefin Sans', sans-serif; font-weight: 600;  margin: 18px 0 0 0px; color:#80a093; text-decoration: none;}
+
+
+
+
+
+#enjoy{width: 50%;  height: 125px; background-color:#024126;  float: left; text-align: center;  }
+
+#enjoy>p{ font-size: 19px; font-family: 'Josefin Sans', sans-serif; font-weight: 400; margin: 18px 0 0 0px; color: #ead4c0;}
+
+
+
+
+
+
+#play{width: 25%;  height: 125px; background-color:#024126;  float: right;}
+
+#play>img{width: 15px; height: 15px;float: right; margin: 15px 52px 0 0px;}
+
+#play>p>a{font-size: 14px; float: right; font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 18px 0 0 0px;  color:#80a093; text-decoration: none;}
+
+
+
+
+
+
+
+/*-----------------------------박스2번-----어바웃어스 엄청큰1897----------------------------------------*/
+
+
+#box2{width: 100%;  height: auto;background-color:#024126; margin: 0 auto;}
+
+.container{width: 100%; height: 250px; background-color:#024126; margin: 0 auto;}
+
+.aboutbox{width:100%; height: 250px; background-color:#024126; margin: 0 auto;}
+
+.about{width:100%; height: 35px; background-color:#024126; margin: 50px 0 0 0px; float: left;}
+
+.about>p{font-size: 14px; color:#ead4c0;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+.history{width:100%; height: 150px; background-color:#024126; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+.history>h1{font-size: 50px;}
+
+.history>h1>span{color: #80a093;}
+
+
+
+/*-----------------------------히스토리까지 끝남----------------------------------------*/
+
+
+#after{width: 100%;  height: auto; background-color:#024126; margin: 0 auto; display: flex; flex-wrap: wrap;flex-direction: row; justify-content: center;}
+
+#halfbox{width: 1060px; height: auto; background-color: #024126;margin: 0px auto; display: flex; justify-content: center; }
+
+#half1{width: 45%;  height: auto; background-color:#024126; margin: 0px auto;}
+
+#half1>img{width: 100%;  height: 100%;}
+
+#half2{width: 45%;  height: auto; background-color:#024126; margin: 0px auto;  }
+
+#half2 p{color:#ead4c0; font-family: 'Josefin Sans', sans-serif;  font-weight: 300; font-size: 20px; }
+
+
+
+#half22{width: 400px;  height: 393px; background-color:#024126; margin: 0px auto; }
+
+#half22>p{color:#ead4c0; font-family: 'Josefin Sans', sans-serif;  font-weight: 300; font-size: 20px; }
+
+#half22>p>span{color: white; font-weight: 500;}
+
+
+
+/*-----------------------------1897그림이랑 영어끝남---------------------------------------*/
+
+
+
+#number{width: 1060px;  height: auto; background-color:#024126; margin: 50px 0px 0 0px; float: left; display: flex;}
+
+.move{width: 25%;  height: auto; background-color:#024126; margin: 0px auto ;}
+
+
+.move>h5{color:#ead4c0; font-family: 'Josefin Sans', sans-serif; text-align: center; font-weight: 600; font-size: 75px;}
+
+.move>h6{color:#ead4c0; font-family: 'Josefin Sans', sans-serif; text-align: center; font-weight: 600; font-size: 13px;}
+
+.move>p{color:#80a093; font-family: 'Josefin Sans', sans-serif; text-align: center ; font-weight: 300; margin: 10px auto; font-size: 18px;}
+
+#push{width: 100%;  height: 180px; background-color:#024126; margin: 38px 0 0 0px; float: left;}
+
+
+#pushmid{width: 250px;  height: 73px; background-color:#024126; margin: 0px auto; }
+
+
+#btn1{width: 120px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #62011d;}
+
+#btn1>a{color: white; text-decoration: none;}
+
+#btn1:hover{background-color: #4c0116;}
+
+#btn2{width: 120px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn2>a{color: white; text-decoration: none;}
+
+
+#btn2:hover{background-color: #6e9183;}
+
+
+
+
+/*--------------------------박스3번-------하우위워크 포도들 있는곳--------------------------------------*/
+
+#box3 { width: 100%;  height: 1040px; background-color:#F3E8DF; margin: 0 auto;}
+
+#grid {width: 100%;  height:7%; background-color:#024126; margin: 0px auto; }
+
+#grid  img{width: 100%;  height: 100%;}
+
+#container3 { width: 100%;  height: 100px; background-color:#F3E8DF; margin: 0 auto;}
+
+#ingredient { width: 100%;  height: 745px; background-color:#F3E8DF; margin: 0 auto;}
+
+#smallbox { width: 100%;  height: 145px; background-color:#F3E8DF; margin: 0 auto;}
+
+
+
+
+#how { width: 100%;  height: 45px; background-color:#F3E8DF; margin: 0 auto;}
+
+#how>p { text-align: center; font-size: 15px; font-weight: bold; color:#80a093; }
+
+#best { width: 100%;  height: 100px; background-color:#F3E8DF; margin: 0 auto; }
+
+#best>h3 { text-align: center; font-size: 45px; font-family: 'Josefin Sans', sans-serif; font-weight: 600; color: #024126; }
+
+#fruitbox{width: 100%; height: auto; background-color:#F3E8DF;margin: 0px auto; display: flex; justify-content: center; }
+
+#veryfruit{width: 1060px; height: auto; background-color: #F3E8DF;margin: 0px auto; display: flex; justify-content: center; }
+
+
+.grape{width: 25%;  height: auto; background-color:#F3E8DF; margin: 0 auto; float: left;  }
+
+.grapeimg{width: 100%;  height: 250px; background-color:#F3E8DF; margin: 0 auto; float: left;}
+
+.grapeimg>img{width: 90%; height: 100%;}
+
+.winename{width: 100%;   height: 88px; background-color:#F3E8DF; margin: 10px auto; float: left;}
+
+.winename>h4{font-size: 1.1em; color: #024126; text-align: center;}
+
+.story{width: 100%;   height: auto; background-color:#F3E8DF; margin: 0 auto; float: left;text-align: center; }
+
+.story>p{color: #776c62;}
+
+
+
+/* -------------------여기까지 포도 상세내역들----------------- */
+
+
+
+
+#push2{width: 100%;  height: 60px; background-color:#F3E8DF; margin: 45px auto;}
+
+#pushmid2{width: 350px;  height: 73px;  margin: 0px auto; }
+
+
+#btn3{width: 202px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #024126;}
+
+#btn3>a{color: white; text-decoration: none;}
+
+#btn3:hover{background-color: #02311d;}
+
+#btn4{width: 133px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn4>a{color: white; text-decoration: none;}
+
+
+#btn4:hover{background-color: #6e9183;}
+
+
+
+
+/*---------------------박스4번 비와인 사진 3개 큰거있음 밭 와인 고기--------------------------------------*/
+
+
+#box4{width: 100%;  height: 1200px; background-color:#024126; margin: 0px auto;display: flex; flex-wrap: wrap; justify-content: center;}
+
+
+
+.container4{width: 100%; height: 150px; background-color:#024126; margin: 0 auto;}
+
+.aboutbox4{width:100%; height: 250px; background-color:#024126; margin: 0 auto;}
+
+.about4{width:100%; height: 35px; background-color:t#024126; margin: 40px 0 0 0px; float: left;}
+
+.about4>p{font-size: 14px; color:#ead4c0;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+.history4{width:100%; height: 150px; background-color:#024126; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+.history4>h1{font-size: 50px;}
+
+.history4>h1>span{color: #80a093;}
+
+
+#grid2{width: 100%; height: auto;background-color:#024126;}
+
+#grid2 img{width: 100%;}
+
+
+#select{width: 100%; height: auto; background-color:#024126;margin: 0px auto; display: flex; justify-content: center; }
+
+#veryselect{width: 1060px; height: auto; background-color:#024126;margin: 0px auto; display: flex; justify-content: center; }
+
+
+
+.terrace{width: 31%; height: 650px; background-color:#024126;margin: 0px auto;}
+
+
+
+.imgbox{width:  100%; height: 307px; background-color:pink;  float: left;}
+
+.imgbox>img{width: 100%; height: 100%;}
+
+
+
+.visit{width: 100%; height: 110px; background-color:#024126; margin: 0px auto; float: left;}
+
+.visit>h4{text-align: center; font-size: 25px; color: white; margin: 35px 0 0 0PX; font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+
+.euro{width:  100%; height: 40px; background-color:#024126; margin: 0px auto; float: left;}
+
+.euro>h5{text-align: center; font-size: 18px; color: #d3ad7f;}
+
+
+.new{width:  100%; height: 61px; background-color:#024126; margin: 0px auto; float: left;}
+
+.new>p{text-align: center; font-size: 15px; color: white;}
+
+
+
+.next{width:  100%; height: 81px; background-color:#024126; margin: 30px auto; float: left;}
+
+.next>p{text-align: center; font-size: 15px; color: #80a093;}
+
+.next>p>img{width: 18px; height: 18px; margin: 0px 8 0 0px;  background-color: #024126;}
+
+
+
+
+/*--------------------------여기서 부턴 버튼----------------*/
+
+
+
+
+#push3{width: 1060px;  height: 110px; background-color:#024126; margin: 0px auto;}
+
+#pushmid3{width: 250px;  height: 73px; background-color:#024126; margin: 0px auto; }
+
+
+#btn5{width: 120px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #62011d;}
+
+#btn5>a{color: white; text-decoration: none;}
+
+#btn5:hover{background-color: #4c0116;}
+
+#btn6{width: 120px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn6>a{color: white; text-decoration: none;}
+
+
+#btn6:hover{background-color: #6e9183;}
+
+
+
+
+
+
+
+/*-------------------------------------------박스5번---------------------------------------------*/
+
+#box5{width: 100%;  height: 660px; background-color:#F3E8DF; margin: 0 auto;}
+
+#grid3{width: 100%; height:30% ; background-color: #024126; margin: 0px  auto;}
+
+#grid3 img{width: 100%; height: 100%;}
+
+
+#leafbox{width: 100%; height: auto; background-color:#F3E8DF;margin: 0px auto; display: flex; justify-content: center; }
+
+#veryleafbox{width: 1060px; height: auto; background-color: #F3E8DF;margin: 0px auto; display: flex;  justify-content: center;  }
+
+
+
+#grape5{width: 20%;  height: 318px; background-color:#F3E8DF; }
+
+#grape5 img{width: 100%; height: 100%;}
+
+
+#grape6{width: 20%;  height: 318px; background-color:#F3E8DF;}
+
+#grape6 img{width: 100%; height: 100%;}
+
+
+
+#medium{width: 52%;  height: auto; background-color:#F3E8DF; margin: 0 auto; float: left; display: flex;  flex-wrap: wrap; justify-content: center;}
+
+
+
+#aboutbox5{width:100%; height: auto; background-color:#F3E8DF; margin: 0px auto;}
+
+#about5{width:100%; height: auto; background-color:#F3E8DF; margin: 50px 0 0 0px; float: left;}
+
+#about5>p{font-size: 14px; color:#80a093;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+#club5{width:100%; height: auto; background-color:#F3E8DF; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+#club5>h1{font-size: 40px; color: #024126;}
+
+#club5>h1>span{color: #80a093;}
+
+
+#duis{width:100%; height: auto; background-color:#F3E8DF; text-align: center; color: #776c62;font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 17px;}
+
+
+#pushmid4{width: 100%;  height:auto; background-color:#F3E8DF; margin: 0px auto; display: flex;justify-content: center; }
+
+#btn7{width: 120px;  height: 49px;  border: none; margin: 0px auto;  cursor: pointer; background-color: #62011d; }
+
+#btn7>a{color: white; text-decoration: none;}
+
+#btn7:hover{background-color: #4c0116;}
+
+
+
+
+/*-------------------------------------------푸터 맨밑에--------------------------------------------*/
+
+footer{width: 100%;  height: 320px; background-color:#F3E8DF; margin: 0 auto; }
+
+#last{width: 80%;  height: 164px; background-color:#F3E8DF; margin: 0 auto;display: flex; }
+
+
+
+#famila{width: 50%;  height: auto; background-color: #F3E8DF; display: flex; flex-direction: column; }
+
+#estd{width: 100%;  height: 52px; background-color: #F3E8DF; margin: 0 auto; float: left;}
+
+#underpen{width: 100%;  height: 60px; background-color:#F3E8DF; margin: 11px auto; float: left; color: #776c62; font-family: 'Josefin Sans', sans-serif; font-size: 20px; font-weight: 300;}
+
+
+#phone{width: 40%;  height: 120px; background-color:#F3E8DF;margin: 0 auto; display: flex; flex-direction: column; }
+
+#iconum{width: 100%;  height: 52px; background-color:#F3E8DF; margin: 0 auto;float: right;}
+
+#iconum>h4{float: right; font-size: 24px;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 15px auto; color: #776c62;}
+
+#iconbird{width: 100%;  height: 30px; background-color:#F3E8DF; margin:31px auto;  display: flex; justify-content: flex-end;}
+
+#iconbird a img{width: 30px; height: 30px; float: left; margin: 0 0 0 10px;}
+
+#betheme{width: 100%; height: 88px; background-color: #F3E8DF; margin:57px auto; border-top: 1px solid #776c62;}
+
+#beantown{width: 100%; height: 88px; background-color: #F3E8DF; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+
+#beantown>p{font-family: 'Josefin Sans', sans-serif; color: #776c62; float: left;}
+
+#beantown>p>a{text-decoration: none; color: #d3ad7f; }
+
+#beantown>p>a:hover{text-decoration: underline; font-weight: 500 ;}
+
+
+
+
+
+}
+
+
+
+
+@media(min-width:1000px){
+
+
+
+/*-------------------------------------------헤더 맨위에---------------------------------------------*/
+
+header{width: 100%; height: 120px; background-color:#024126; margin: 0 auto; }
+
+#logo{width: 20%; height: 120px;  background-color:#024126; margin: 0; }
+
+#logobox{width: 150px; height: auto; background-color:#024126; margin: 0 0 0 100px;    }
+
+#logobox>a>img{width: 100%; height: 100%; margin: 10px auto ;}
+
+
+
+/*-------------------------------------------메뉴들---------------------------------------------*/
+
+
+
+.active {border:0px;}
+
+#menu1 li {border:0px;}
+
+.navBtn{display: none;}
+
+.xxx{display: none;}
+
+#menu1 {width: 80%; height: 120px; background: transparent; list-style: none; font-family: 'Josefin Sans', sans-serif; font-weight: 700; float: right;  position: unset; display: flex; justify-content: space-evenly; align-items: center;}
+
+
+#menu1>ul>li{float: left; margin: 0 0 0 50px; }
+
+#menu1>ul>li>a{text-decoration: none; font-size: 18px; color:#ead4c0; }
+
+
+#menu1>ul>li>a:hover{opacity: 0.7;  }
+
+
+/*-------------------------------------슬라이더---엄청큰 와인-------------------------------------------*/
+
+#slider{width: 100%;  height: 850px; background-color:#024126; margin: 0 auto; background-size:cover;	background-image:url("img/wineslider.jpg");  background-position:center; display: flex; flex-wrap: wrap; justify-content: flex-start;}
+
+
+
+#firstwine{width: 100%; height: auto; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: flex-starts;align-items: center; font-size: 33px; }
+
+#firstwine h1{color: #fff;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 250px 840px 0px 0px;}
+
+
+#firstbtn{width: 390px;  height: 80px;   margin: 40px 950px 0 0px; display: flex; justify-content: center; align-items: center;}
+
+
+#firstbtn1{width: 180px;  height: 55px;  border: none; cursor: pointer; background-color: #62011d; font-size: 18px; margin: 0px 10px;}
+
+#firstbtn1>a{color: white; text-decoration: none;}
+
+#firstbtn1:hover{background-color: #4c0116;}
+
+#firstbtn2{width: 180px;  height: 55px;  color: white; border: none;  cursor: pointer; background-color:#80a093; font-size: 18px;}
+
+#firstbtn2>a{color: white; text-decoration: none;}
+
+
+#firstbtn2:hover{background-color: #6e9183;}
+
+
+/*--------------------------------박스1번----와인밑에 플레이버튼들-------------------------------------*/
+
+#box1{width: 100%;  height: 125px; background-color:#024126; margin: 0 auto;}
+
+#us{width: 60%;  height: 125px; background-color:#024126; margin: 0 auto;}
+
+
+
+
+
+#facebook{width: 25%;  height: 125px; background-color:#024126;  float: left;}
+
+#facebook>img{width: 15px; height: 15px; float: left; margin: 15px 0 0 55px;}
+
+#facebook>p>a{font-size: 14px; float: left; font-family: 'Josefin Sans', sans-serif; font-weight: 600;  margin: 18px 0 0 0px; color:#80a093; text-decoration: none;}
+
+
+
+
+
+#enjoy{width: 50%;  height: 125px; background-color:#024126;  float: left; text-align: center;  }
+
+#enjoy>p{ font-size: 19px; font-family: 'Josefin Sans', sans-serif; font-weight: 400; margin: 18px 0 0 0px; color: #ead4c0;}
+
+
+
+
+
+
+#play{width: 25%;  height: 125px; background-color:#024126;  float: right;}
+
+#play>img{width: 15px; height: 15px;float: right; margin: 15px 52px 0 0px;}
+
+#play>p>a{font-size: 14px; float: right; font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 18px 0 0 0px;  color:#80a093; text-decoration: none;}
+
+
+
+
+
+
+
+/*-----------------------------박스2번-----어바웃어스 엄청큰1897----------------------------------------*/
+
+
+#box2{width: 100%;  height: auto;background-color:#024126; margin: 0 auto;}
+
+.container{width: 100%; height: 250px; background-color:#024126; margin: 0 auto;}
+
+.aboutbox{width:100%; height: 250px; background-color:#024126; margin: 0 auto;}
+
+.about{width:100%; height: 35px; background-color:#024126; margin: 50px 0 0 0px; float: left;}
+
+.about>p{font-size: 14px; color:#ead4c0;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+.history{width:100%; height: 150px; background-color:#024126; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+.history>h1{font-size: 50px;}
+
+.history>h1>span{color: #80a093;}
+
+
+
+/*-----------------------------히스토리까지 끝남----------------------------------------*/
+
+
+#after{width: 100%;  height: auto; background-color:#024126; margin: 0 auto; display: flex; flex-wrap: wrap;flex-direction: row; justify-content: center;}
+
+#halfbox{width: 1060px; height: auto; background-color: #024126;margin: 0px auto; display: flex; justify-content: center; }
+
+#half1{width: 45%;  height: auto; background-color:#024126; margin: 0px auto;}
+
+#half1>img{width: 100%;  height: 100%;}
+
+#half2{width: 45%;  height: auto; background-color:#024126; margin: 0px auto;  }
+
+#half2 p{color:#ead4c0; font-family: 'Josefin Sans', sans-serif;  font-weight: 300; font-size: 20px; }
+
+
+
+#half22{width: 400px;  height: 393px; background-color:#024126; margin: 0px auto; }
+
+#half22>p{color:#ead4c0; font-family: 'Josefin Sans', sans-serif;  font-weight: 300; font-size: 20px; }
+
+#half22>p>span{color: white; font-weight: 500;}
+
+
+
+/*-----------------------------1897그림이랑 영어끝남---------------------------------------*/
+
+
+
+#number{width: 1060px;  height: auto; background-color:#024126; margin: 50px 0px 0 0px; float: left; display: flex;}
+
+.move{width: 25%;  height: auto; background-color:#024126; margin: 0px auto ;}
+
+
+.move>h5{color:#ead4c0; font-family: 'Josefin Sans', sans-serif; text-align: center; font-weight: 600; font-size: 75px;}
+
+.move>h6{color:#ead4c0; font-family: 'Josefin Sans', sans-serif; text-align: center; font-weight: 600; font-size: 13px;}
+
+.move>p{color:#80a093; font-family: 'Josefin Sans', sans-serif; text-align: center ; font-weight: 300; margin: 10px auto; font-size: 18px;}
+
+#push{width: 100%;  height: 180px; background-color:#024126; margin: 38px 0 0 0px; float: left;}
+
+
+#pushmid{width: 250px;  height: 73px; background-color:#024126; margin: 0px auto; }
+
+
+#btn1{width: 120px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #62011d;}
+
+#btn1>a{color: white; text-decoration: none;}
+
+#btn1:hover{background-color: #4c0116;}
+
+#btn2{width: 120px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn2>a{color: white; text-decoration: none;}
+
+
+#btn2:hover{background-color: #6e9183;}
+
+
+
+
+/*--------------------------박스3번-------하우위워크 포도들 있는곳--------------------------------------*/
+
+#box3 { width: 100%;  height: 1040px; background-color:#F3E8DF; margin: 0 auto;}
+
+#grid {width: 100%;  height:7%; background-color:#024126; margin: 0px auto; }
+
+#grid  img{width: 100%;  height: 100%;}
+
+#container3 { width: 100%;  height: 100px; background-color:#F3E8DF; margin: 0 auto;}
+
+#ingredient { width: 100%;  height: 745px; background-color:#F3E8DF; margin: 0 auto;}
+
+#smallbox { width: 100%;  height: 145px; background-color:#F3E8DF; margin: 0 auto;}
+
+
+
+
+#how { width: 100%;  height: 45px; background-color:#F3E8DF; margin: 0 auto;}
+
+#how>p { text-align: center; font-size: 15px; font-weight: bold; color:#80a093; }
+
+#best { width: 100%;  height: 100px; background-color:#F3E8DF; margin: 0 auto; }
+
+#best>h3 { text-align: center; font-size: 45px; font-family: 'Josefin Sans', sans-serif; font-weight: 600; color: #024126; }
+
+#fruitbox{width: 100%; height: auto; background-color:#F3E8DF;margin: 0px auto; display: flex; justify-content: center; }
+
+#veryfruit{width: 1060px; height: auto; background-color: #F3E8DF;margin: 0px auto; display: flex; justify-content: center; }
+
+
+.grape{width: 25%;  height: auto; background-color:#F3E8DF; margin: 0 auto; float: left;  }
+
+.grapeimg{width: 100%;  height: 250px; background-color:#F3E8DF; margin: 0 auto; float: left;}
+
+.grapeimg>img{width: 90%; height: 100%;}
+
+.winename{width: 100%;   height: 88px; background-color:#F3E8DF; margin: 10px auto; float: left;}
+
+.winename>h4{font-size: 1.1em; color: #024126; text-align: center;}
+
+.story{width: 100%;   height: auto; background-color:#F3E8DF; margin: 0 auto; float: left;text-align: center; }
+
+.story>p{color: #776c62;}
+
+
+
+/* -------------------여기까지 포도 상세내역들----------------- */
+
+
+
+
+#push2{width: 100%;  height: 60px; background-color:#F3E8DF; margin: 45px auto;}
+
+#pushmid2{width: 350px;  height: 73px;  margin: 0px auto; }
+
+
+#btn3{width: 202px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #024126;}
+
+#btn3>a{color: white; text-decoration: none;}
+
+#btn3:hover{background-color: #02311d;}
+
+#btn4{width: 133px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn4>a{color: white; text-decoration: none;}
+
+
+#btn4:hover{background-color: #6e9183;}
+
+
+
+
+/*---------------------박스4번 비와인 사진 3개 큰거있음 밭 와인 고기--------------------------------------*/
+
+
+#box4{width: 100%;  height: 1200px; background-color:#024126; margin: 0px auto;display: flex; flex-wrap: wrap; justify-content: center;}
+
+
+
+.container4{width: 100%; height: 150px; background-color:#024126; margin: 0 auto;}
+
+.aboutbox4{width:100%; height: 250px; background-color:#024126; margin: 0 auto;}
+
+.about4{width:100%; height: 35px; background-color:t#024126; margin: 40px 0 0 0px; float: left;}
+
+.about4>p{font-size: 14px; color:#ead4c0;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+.history4{width:100%; height: 150px; background-color:#024126; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+.history4>h1{font-size: 50px;}
+
+.history4>h1>span{color: #80a093;}
+
+
+#grid2{width: 100%; height: auto;background-color:#024126;}
+
+#grid2 img{width: 100%;}
+
+
+#select{width: 100%; height: auto; background-color:#024126;margin: 0px auto; display: flex; justify-content: center; }
+
+#veryselect{width: 1060px; height: auto; background-color:#024126;margin: 0px auto; display: flex; justify-content: center; }
+
+
+
+.terrace{width: 31%; height: 650px; background-color:#024126;margin: 0px auto;}
+
+
+
+.imgbox{width:  100%; height: 307px; background-color:pink;  float: left;}
+
+.imgbox>img{width: 100%; height: 100%;}
+
+
+
+.visit{width: 100%; height: 110px; background-color:#024126; margin: 0px auto; float: left;}
+
+.visit>h4{text-align: center; font-size: 25px; color: white; margin: 35px 0 0 0PX; font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+
+.euro{width:  100%; height: 40px; background-color:#024126; margin: 0px auto; float: left;}
+
+.euro>h5{text-align: center; font-size: 18px; color: #d3ad7f;}
+
+
+.new{width:  100%; height: 61px; background-color:#024126; margin: 0px auto; float: left;}
+
+.new>p{text-align: center; font-size: 15px; color: white;}
+
+
+
+.next{width:  100%; height: 81px; background-color:#024126; margin: 30px auto; float: left;}
+
+.next>p{text-align: center; font-size: 15px; color: #80a093;}
+
+.next>p>img{width: 18px; height: 18px; margin: 0px 8 0 0px;  background-color: #024126;}
+
+
+
+
+/*--------------------------여기서 부턴 버튼----------------*/
+
+
+
+
+#push3{width: 1060px;  height: 110px; background-color:#024126; margin: 0px auto;}
+
+#pushmid3{width: 250px;  height: 73px; background-color:#024126; margin: 0px auto; }
+
+
+#btn5{width: 120px;  height: 49px;  border: none; margin: 0px 0 0 2px;  cursor: pointer; background-color: #62011d;}
+
+#btn5>a{color: white; text-decoration: none;}
+
+#btn5:hover{background-color: #4c0116;}
+
+#btn6{width: 120px;  height: 49px;  color: white; border: none; margin: 0px 0 0 2px; cursor: pointer; background-color:#80a093;}
+
+#btn6>a{color: white; text-decoration: none;}
+
+
+#btn6:hover{background-color: #6e9183;}
+
+
+
+
+
+
+
+/*-------------------------------------------박스5번---------------------------------------------*/
+
+#box5{width: 100%;  height: 660px; background-color:#F3E8DF; margin: 0 auto;}
+
+#grid3{width: 100%; height:30% ; background-color: #024126; margin: 0px  auto;}
+
+#grid3 img{width: 100%; height: 100%;}
+
+
+#leafbox{width: 100%; height: auto; background-color:#F3E8DF;margin: 0px auto; display: flex; justify-content: center; }
+
+#veryleafbox{width: 1060px; height: auto; background-color: #F3E8DF;margin: 0px auto; display: flex;  justify-content: center;  }
+
+
+
+#grape5{width: 20%;  height: 318px; background-color:#F3E8DF; }
+
+#grape5 img{width: 100%; height: 100%;}
+
+
+#grape6{width: 20%;  height: 318px; background-color:#F3E8DF;}
+
+#grape6 img{width: 100%; height: 100%;}
+
+
+
+#medium{width: 52%;  height: auto; background-color:#F3E8DF; margin: 0 auto; float: left; display: flex;  flex-wrap: wrap; justify-content: center;}
+
+
+
+#aboutbox5{width:100%; height: auto; background-color:#F3E8DF; margin: 0px auto;}
+
+#about5{width:100%; height: auto; background-color:#F3E8DF; margin: 50px 0 0 0px; float: left;}
+
+#about5>p{font-size: 14px; color:#80a093;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; text-align: center;}
+
+#club5{width:100%; height: auto; background-color:#F3E8DF; margin: 5px auto; float: left; text-align: center;  color: white;font-family: 'Josefin Sans', sans-serif; font-weight: 600;}
+
+#club5>h1{font-size: 50px; color: #024126;}
+
+#club5>h1>span{color: #80a093;}
+
+
+#duis{width:100%; height: auto; background-color:#F3E8DF; text-align: center; color: #776c62;font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 17px;}
+
+
+#pushmid4{width: 100%;  height:auto; background-color:#F3E8DF; margin: 0px auto; display: flex;justify-content: center; }
+
+#btn7{width: 120px;  height: 49px;  border: none; margin: 0px auto;  cursor: pointer; background-color: #62011d; }
+
+#btn7>a{color: white; text-decoration: none;}
+
+#btn7:hover{background-color: #4c0116;}
+
+
+
+
+/*-------------------------------------------푸터 맨밑에--------------------------------------------*/
+
+footer{width: 100%;  height: 320px; background-color:#F3E8DF; margin: 0 auto; }
+
+#last{width: 80%;  height: 164px; background-color:#F3E8DF; margin: 0 auto;display: flex; }
+
+
+
+#famila{width: 50%;  height: auto; background-color: #F3E8DF; display: flex; flex-direction: column; }
+
+#estd{width: 100%;  height: 52px; background-color: #F3E8DF; margin: 0 auto; float: left;}
+
+#underpen{width: 100%;  height: 60px; background-color:#F3E8DF; margin: 11px auto; float: left; color: #776c62; font-family: 'Josefin Sans', sans-serif; font-size: 20px; font-weight: 300;}
+
+
+#phone{width: 40%;  height: 120px; background-color:#F3E8DF;margin: 0 auto; display: flex; flex-direction: column; }
+
+#iconum{width: 100%;  height: 52px; background-color:#F3E8DF; margin: 0 auto;float: right;}
+
+#iconum>h4{float: right; font-size: 24px;  font-family: 'Josefin Sans', sans-serif; font-weight: 600; margin: 15px auto; color: #776c62;}
+
+#iconbird{width: 100%;  height: 30px; background-color:#F3E8DF; margin:31px auto;  display: flex; justify-content: flex-end;}
+
+#iconbird a img{width: 30px; height: 30px; float: left; margin: 0 0 0 10px;}
+
+#betheme{width: 100%; height: 88px; background-color: #F3E8DF; margin:57px auto; border-top: 1px solid #776c62;}
+
+#beantown{width: 100%; height: 88px; background-color: #F3E8DF; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+
+#beantown>p{font-family: 'Josefin Sans', sans-serif; color: #776c62; float: left;}
+
+#beantown>p>a{text-decoration: none; color: #d3ad7f; }
+
+#beantown>p>a:hover{text-decoration: underline; font-weight: 500 ;}
+
+
+
+
+}
+
+
+	</style>
+
+
+
+	 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+    <script>
+
+      $(function(){
+
+        $('.navBtn').click(function(){
+
+          $("#menu1").toggleClass("wow");
+
+          if($("#menu1").hasClass("wow")){
+
+            $("#menu1").animate({"right":"0px"},200);
+
+            $(".navBtn").text("Close");
+
+          } else {
+
+            $("#menu1").animate({"right":"-300px"},200);
+
+            $(".navBtn").text("Open");
+
+          }
+
+        });
+
+        $('.xxx').click(function(){
+
+          $("#menu1").animate({"right":"-300px"},200);
+
+          $(".navBtn").text("Open");
+        });
+
+
+
+
+      });
+
+
+    </script>
+
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+     <!----------------------------헤더----------------------------------------------------->
+
+
+<header>
+
+ <div id="logo">
+
+
+
+         <div id="logobox">
+
+          <a href="index.html"> <img src="img/logo.png" alt="로고"> </a>
+       
+      </div>
+
+
+  <!--    <img src="img/hamburger.png" class="a"-->
+
+ 
+  <a href="#"><img src="img/hamburger.png" class="navBtn"></a>
+
+  </div>
+
+ 
+
+</div>
+
+
+
+    <div id="menu1">
+
+      <img src="img/xmenu.png" alt="" class="xxx">       
+
+       <ul>
+
+        <li class="active"><a href="index.html">HOME</a></li>
+
+        <li><a href="#box2">ABOUT US</a></li>
+
+        <li><a href="#box3">WINES</a></li>
+
+        <li><a href="#box4">VINEYARDS</a></li>
+
+        <li><a href="#box4">CONTACT</a></li>
+
+        <li><a href="#box5">BUY NOW</a></li>
+
+
+    </ul>
+
+
+
+
+</div>
+
+
+ 
+     <!----------------------------메뉴여기까지----------------------------------------------------->
+
+
+
+
+</header>
+
+
+
+
+<!----------------------------------슬라이더---------------------------------------->
+
+<div id="slider">
+
+
+	<div id="firstwine">
+		
+		<h1>EXPLORE OUR<br> WIDE VARIETY<br> OF WINES</h1>
+
+
+		<div id="firstbtn">
+
+			<button id="firstbtn1"><a href="#">BOOK A TOUR</a></button>
+			<button id="firstbtn2"><a href="#">OUR WINES</a></button>
+
+
+
+
+	 </div>
+
+
+   </div>
+
+
+
+</div>
+
+
+<!-----------------------------------박스1--------------------------------------------->
+
+<div id="box1">
+	
+	<div id="us">
+
+
+		<div id="facebook">
+
+			<img src="img/facebook.png" alt=""><p><a href="#">FACEBOOK</a></p>
+
+		</div>
+
+
+		<div id="enjoy">
+
+			<p> Enjoy your passion for wine with us </p>
+
+		</div>
+
+
+		<div id="play">
+
+			<img src="img/play.png" alt=""><p><a href="#">PLAY VIDEO</a></p>
+
+		</div>
+
+
+	</div>
+
+
+
+</div>
+
+
+
+
+<!-----------------------------------박스2--------------------------------------------->
+
+
+
+<div id="box2">
+
+	<div class="container">
+		
+		<div class="aboutbox">
+
+			<div class="about">
+
+				<p>ABOUT US</p>
+
+			</div>
+
+			<div class="history">
+
+				<h1>HISTORY AND TRADITION <br><span>OF OUR VINEYARDS</span></h1>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	
+	<div id="after">
+
+		<div id="halfbox">
+
+		<div id="half1">
+
+			<img src="img/1897.jpg" alt="">
+
+		</div>
+
+
+
+		<div id="half2">
+
+
+			
+
+				<p> <span>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</span><br><br>
+
+					Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam quis quam venenatis fringilla. Morbi vestibulum id tellus commodo mattis. Aliquam erat volutpat. Aenean accumsan id mi nec semper. Lorem ipsum.<br><br>
+
+					Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui eget mollis. Nullam lacinia dictum auctor. aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque.<br><br>
+
+				Penatibus et magnis dis parturient montes.</p>
+
+
+			
+
+		</div>
+
+	</div>
+
+
+		<div id="number">
+
+			<div class="move">
+
+				<h5>124</h5>
+				<br>
+				<h6>ALIQUAM ERAT IPSUM</h6>
+				<br>
+				<p>Fusce ut velit laoreet, tempus<br> arcu eu, molestie tortor. Nam<br> vel justo cursus faucibus.</p>
+
+
+			</div>
+
+			<div class="move">
+
+
+				<h5>260</h5>
+				<br>
+				<h6>MALESUADA ELIT</h6>
+				<br>
+				<p>Fusce ut velit laoreet, tempus<br> arcu eu, molestie tortor. Nam<br> vel justo cursus faucibus.</p>
+
+
+			</div>
+
+			<div class="move">
+
+
+				<h5>165</h5>
+				<br>
+				<h6>DAPIBUS RISUS</h6>
+				<br>
+				<p>Fusce ut velit laoreet, tempus<br> arcu eu, molestie tortor. Nam<br> vel justo cursus faucibus.</p>
+
+
+			</div>
+
+			<div class="move">
+
+
+				<h5>987</h5>
+				<br>
+				<h6>LAOREET ENIM PHASELLUS</h6>
+				<br>
+				<p>Fusce ut velit laoreet, tempus<br> arcu eu, molestie tortor. Nam<br> vel justo cursus faucibus.</p>
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+		<div id="push">
+
+			<div id="pushmid">
+
+				<button id="btn1"><a href="#">ABOUT US</a></button>
+				<button id="btn2"><a href="#">OUR WINES</a></button>
+
+			</div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div>
+
+
+
+<!----------------------------------------박스3--------------------------------------------->
+
+
+
+<div id="box3">
+	
+	<div id="grid">
+
+	<img src="img/grid.png" alt="">
+
+
+		</div>	
+
+	<div id="container3"></div>
+
+
+
+	<div id="ingredient">
+
+		<div id="smallbox">
+
+			<div id="how"><p>HOW WE WORK</p></div>
+
+			<div id="best"><h3>THE BEST INGREDIENTS</h3></div>
+			
+		</div>
+
+		<div id="fruitbox">
+
+
+
+		<div id="veryfruit">
+
+
+
+			<div class="grape">
+				
+				<div class="grapeimg">
+
+					<img src="img/grape1.png" alt="">
+
+				</div>
+
+				<div class="winename">
+
+					<h4>ELEIFEND JUSTO BIBENDUM</h4>
+
+				</div>
+
+				<div class="story">
+
+					<p>Ut ultricies imperdiet sodales.<br> Aliquam fringilla aliquam ex<br> sit amet elementum. <br>Proin bibendum feugiat.</p>
+
+
+				</div>
+
+
+			</div>
+
+
+
+			<div class="grape">
+
+				<div class="grapeimg">
+
+					<img src="img/grape2.png" alt="">
+
+				</div>
+
+				<div class="winename">
+
+					<h4>LECTUS FELIS ULTRICIES</h4>
+
+				</div>
+
+				<div class="story">
+
+					<p>Fusce ut velit laoreet, <br>tempus arcu eu,<br> molestie tortor. Nam<br>vel justo cursus lorem.</p>
+
+
+				</div>
+
+
+				
+
+			</div>
+
+
+
+
+			<div class="grape">
+
+				<div class="grapeimg">
+
+					<img src="img/grape3.png" alt="">
+
+				</div>
+
+				<div class="winename">
+
+					<h4>INTEGER<br> ULTRICES</h4>
+
+				</div>
+
+				<div class="story">
+
+					<p>Aliquam fringilla <br>aliquam ex sit amet<br> elementum. Proin<br> bibendum sollicitudin<br> feugiat fringilla<br> aliquam.</p>
+
+
+				</div>
+
+				
+
+			</div>
+
+
+
+			<div class="grape">
+
+
+				<div class="grapeimg">
+
+					<img src="img/grape4.png" alt="">
+
+				</div>
+
+				<div class="winename">
+
+					<h4>FERMENTUM IN DOLOR</h4>
+
+				</div>
+
+				<div class="story">
+
+					<p>Aliquam ac dui <br>vel dui vulputate consectetur.<br> Mauris accumsan,<br> massa non.
+					</p>
+
+
+				</div>
+
+				
+			</div>
+
+
+
+		</div>
+
+
+		</div>
+
+
+		<div id="push2">
+
+			<div id="pushmid2">
+
+				<button id="btn3"><a href="#">SEE OUR VINEYARDS</a></button>
+				<button id="btn4"><a href="#">OUR WINES</a></button>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+</div>
+
+
+
+<!----------------------------------------박스4--------------------------------------------->
+
+
+
+<div id="box4">
+	
+	<div id="grid2">
+
+		<img src="img/grid2.png" alt="">
+
+	</div>
+
+		<div class="container4">
+
+			<div class="aboutbox4">
+
+				<div class="about4">
+
+					<p>BEWINE</p>
+
+				</div>
+
+				<div class="history4">
+
+					<h1>MEET OUR<br><span>FAMILY BUSINESS</span></h1>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+	<!---------영어 부제목은 여기까지---------->
+
+
+		<div id="select">
+
+
+
+		<div id="veryselect">
+
+
+
+			<div class="terrace">
+
+				<div class="imgbox">
+
+					<img src="img/bab.jpg" alt="">
+
+				</div>
+
+				<div class="visit">
+
+					<h4>VISIT<br>
+					A VINEYARD</h4>
+
+				</div>
+
+				<div  class="euro">
+
+					<h5>59 €</h5>
+
+				</div>
+
+				<div class="new">
+
+					<p>Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere urna libero.</p>
+
+
+				</div>
+
+				<div class="next">
+
+
+
+
+					<p>Aliquam fringilla aliquam</p>
+					<p>Proin bibendum feugiat</p>
+					<p>Curabitur ut egestas</p>
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+			</div>
+
+
+
+
+			<div class="terrace">
+
+
+				<div class="imgbox">
+
+					<img src="img/bab2.jpg" alt="">
+
+				</div>
+
+				<div class="visit">
+
+					<h4>WINE<br>
+					TASTING</h4>
+
+				</div>
+
+				<div  class="euro">
+
+					<h5>129 €</h5>
+
+				</div>
+
+				<div class="new">
+
+					<p>Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere urna libero.</p>
+
+
+				</div>
+
+				<div class="next">
+
+					<p> Aliquam fringilla aliquam</p>
+					<p>Proin bibendum feugiat</p>
+					<p>Curabitur ut egestas</p>
+
+
+					
+
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="terrace">
+
+
+				<div class="imgbox">
+
+					<img src="img/bab3.jpg" alt="">
+
+				</div>
+
+				<div class="visit">
+
+					<h4>DINNER<br>
+					WITH FRIENDS</h4>
+
+				</div>
+
+				<div  class="euro">
+
+					<h5>229 €</h5>
+
+				</div>
+
+				<div class="new">
+
+					<p>Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere urna libero.</p>
+
+
+				</div>
+
+				<div class="next">
+
+					<p> Aliquam fringilla aliquam</p>
+					<p>Proin bibendum feugiat</p>
+					<p>Curabitur ut egestas</p>
+
+				</div>
+
+
+			</div>
+
+
+
+			
+
+		</div>
+
+		</div>
+
+				<div id="push3">
+
+				<div id="pushmid3">
+
+					<button id="btn5"><a href="#">ABOUT US</a></button>
+					<button id="btn6"><a href="#">OUR WINES</a></button>
+
+				</div>
+
+
+			</div>
+
+	</div>
+
+
+</div>
+
+
+
+<!---------------------------------------박스5---------------------------------------------->
+
+
+
+
+<div id="box5">
+
+
+			<div id="grid3">
+
+			<img src="img/grid3.png" alt="">
+
+		</div>
+
+	<div id="leafbox">
+
+		<div id="veryleafbox">
+
+
+		<div id="grape5">
+
+
+			<img src="img/grape2.png" alt="">
+
+		</div>
+
+		<div id="medium">
+
+
+			<div id="aboutbox5">
+
+				<div id="about5">
+
+					<p>ABOUT US</p>
+
+				</div>
+
+				<div id="club5">
+
+					<h1>THE CLUB FOR <br><span>CONNOISSEURS</span></h1>
+
+
+				</div>
+
+			</div>
+
+
+
+
+
+			<div id="duis">
+
+	<p>Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel,<br>  maximus
+	justo. Maecenas mi tortor, pellentesque aliquam.</p>
+			
+			</div>
+
+
+
+			</div>
+		
+
+		<div id="grape6">
+
+			<img src="img/grape1.png" alt="">
+
+		</div>
+
+		</div>
+
+
+	</div>
+
+	<!---------------------------여기서 부터 버튼------------------------------------------------>
+
+		<div id="pushmid4">
+
+				<button id="btn7">
+
+					<a href="#">JOIN NOW</a>
+
+				</button>
+
+		</div>
+
+</div>
+
+                				
+
+
+<!----------------------------------------푸터--------------------------------------------->
+
+
+<footer>
+
+
+	<div id="last">
+
+
+
+		<div id="famila">
+
+			<div id="estd">
+
+				<img src="img/footerlogo.png" alt="">
+
+			</div>
+
+			<div id="underpen">
+
+				<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>
+					Suspendisse a pellentesque dui, non felis. Maecenas <br>
+				malesuada.</p>
+
+			</div>
+
+
+
+		</div>
+
+
+		<div id="phone">
+
+
+
+			<div id="iconum">
+
+				<h4>+61 (0) 383 766 284</h4>
+
+			</div>
+
+			<div id="iconbird"s>
+
+				<a href="#"><img src="img/twitter.png" alt=""></a>
+
+				<a href="#"><img src="img/footerfacebook.png" alt=""></a>
+
+				<a href="#"><img src="img/skype.png" alt=""></a>
+
+
+
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+	<div id="betheme">
+
+
+		<div id="beantown">
+
+			<p>© 2020 BeWine3 - BeTheme. Muffin group - HTML by <a href="#">BeantownThemes</a></p>
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>
